@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>የመንጃ ፍቃድ ፈተና.</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   <link rel="shortcut icon" type="test"  href="img/title.png"> 
+</head>
+<body>
+    
+    <div class="container">
+        <div class="container-header">
+           <p class="kft"><strong>Kifiya Financial Technology.</strong> </p> 
+           <h1><span> <i class="fa fa-car" aria-hidden="true"></i>የመኪና</span> መንጃ ፍቃድ ፈተና.</h1>
+        </div>
+        <div class="content" id="question_header">
+            <p> ወደ መኪና መንጃ ፍቃድ ፈተና በደህና መጡ። ፈተናዉን ከመዉሰድዎ በፊት የሚከተሉትን መረጃዎች ያሰገቡ።</p>
+            <ol >
+                <li>ሙሉ ስም (Full Name)</li>
+                <li>ጾታ (Gender)</li>
+                <li>እድሜ (Age)</li>
+                <li>የትዉልድ ቦታ (Nationality)</li>
+            </ol>
+             
+        </div>
+       <button id="mybtn" class="btn">መረጃዉን ያስገቡ >></button>
+    </div>
+    <!-- Modal-->
+    <div id="myNodal" class="nodal">
+        <div class="nodal-content">
+            <div class="nodal-header">
+                <span class="close">&times;</span>
+               <h2>መረጃዉን ያስገቡ</h2>
+            </div>
+            <div class="nodal-body">
+               <form >
+                   <div id="form-div">
+ 
+                    <div id="form_left">
+                        ሙሉ ስም (Full Name): <br>
+                        ጾታ (Gender): <br>
+                        እድሜ (Age):  <br>  
+                        የትዉልድ ቦታ (Nationality): <br>
+                    </div>
+                    <div id="form_right">
+                        <input type="text" id="name" placeholder="ሙሉ ስም">
+                        <select id="gender" >
+                            <option value=""></option>
+                            <option value="ወንድ">ወንድ</option>
+                            <option value="ሴት">ሴት</option>
+                        </select>
+                        <div class="slider_container">
+                         
+                             <input type="range" id="Age" min="16" max="75" value="24" class="slider"> 
+                             <span id="ageRange"></span> 
+                            
+                        </div>
+                      
+                        <input type="text" id="Nationality" placeholder="የትዉልድ ቦታ....">
+                        <div >
+                            <button onclick="sendStudentInfo(event)" id="submit" class="butt" >መረጃዉን ያስገቡ</button>
+                           </div>
+                    </div>
+
+                   </div>
+                   
+                   <div class="nodal-footer">
+                      <p class="foot">ወደ መኪና መንጃ ፍቃድ ፈተና በደህና መጡ። ፈተናዉን ከመዉሰድዎ በፊት የሚከተሉትን መረጃዎች ያሰገቡ።</p>
+                   </div>
+               </form>
+
+            </div>
+        </div>
+    </div>
+    <script src=" js/javascript.js"></script>
+  
+</body>
+<footer>
+    <p>&copy; 2024 Sintay. All rights reserved.</p>
+</footer>
+
+</html>
+
+
+
